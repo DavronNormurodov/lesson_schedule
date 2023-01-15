@@ -42,4 +42,6 @@ class Pair(Model):
         return str(self.index)
 
     class Meta:
-        ordering = ('index', )
+        ordering = ('index',)
+
+

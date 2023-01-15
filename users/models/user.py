@@ -28,7 +28,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_superuser = BooleanField(default=False)
     is_active = BooleanField(default=True)
 
-    role = ForeignKey(Role, PROTECT, 'role_users')
+    role = ForeignKey(Role, PROTECT, 'role_users', null=True)
     date_joined = DateTimeField(default=timezone.now)
 
     USERNAME_FIELD = 'username'

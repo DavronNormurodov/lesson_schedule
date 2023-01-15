@@ -1,4 +1,5 @@
-from django.db.models import Model, CharField, ManyToManyField,\
+from django.db import models
+from django.db.models import Model, CharField, ManyToManyField, \
     ForeignKey, PROTECT, CASCADE, IntegerField
 
 from references.models import Subject, Room, Groups, Pair

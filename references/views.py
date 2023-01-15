@@ -12,6 +12,7 @@ class RoomViewSet(ModelViewSet):
 class SubjectViewSet(ModelViewSet):
     queryset = Subject.objects.all().order_by('-id')
     serializer_class = SubjectSerializer
+    # Room.objects.create(title='a102')
 
 
 class GroupsViewSet(ModelViewSet):

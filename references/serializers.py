@@ -9,6 +9,9 @@ class RoomSerializer(serializers.ModelSerializer):
         model = Room
         fields = '__all__'
 
+    def create(self, validated_data):
+        return super().create(validated_data)
+
 
 class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
